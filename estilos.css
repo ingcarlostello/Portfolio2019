@@ -1,0 +1,1074 @@
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600");
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    body{
+      
+        overflow-x: hidden;
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				                                                                        NavBar
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+   
+    #barra {
+        background-color: transparent;
+        /*position: absolute;*/
+        top: -10px;
+        /* width: 100%; */
+        transition: all 0.5s;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        padding:auto;
+        margin:auto;
+     
+    }
+    
+    #barra a {
+       
+        float: left;
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.5px;
+        line-height: 16.9px;
+        font-weight: bold;
+    }
+
+   
+    
+    #barra a:hover {
+        background-color: whitesmoke;
+    }
+    
+    @media screen and (max-width: 991px) {
+        .navbar .navbar-collapse {
+            background:whitesmoke;
+            border-radius: 10px;
+            overflow: auto;
+           
+        }
+    }
+    /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				                                                                                scroll-behavior
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				                                                        seccion 1: foto de portada
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    #home {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Imagenes/singapor.jpg");
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
+    /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				                                                        seccion 1: Fuente de la seccion 1
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    #homeRow {
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    
+    .cd-headline {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .cd-headline {
+            font-size: 4.4rem;
+            font-weight: 300;
+        }
+    }
+    
+    @media only screen and (min-width: 1170px) {
+        .cd-headline {
+            font-size: 6rem;
+        }
+    }
+    
+    .cd-words-wrapper {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+    }
+    
+    .cd-words-wrapper b {
+        display: inline-block;
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        top: 0;
+    }
+    
+    .cd-words-wrapper b.is-visible {
+        position: relative;
+    }
+    
+    .no-js .cd-words-wrapper b {
+        opacity: 0;
+    }
+    
+    .no-js .cd-words-wrapper b.is-visible {
+        opacity: 1;
+    }
+    /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                            xclip: Animacion del texto de la foto de portada
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    .cd-headline.clip span {
+        display: inline-block;
+        padding: .2em 0;
+    }
+    
+    .cd-headline.clip .cd-words-wrapper {
+        overflow: hidden;
+        vertical-align: top;
+    }
+    
+    .cd-headline.clip .cd-words-wrapper::after {
+        /* line */
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 2px;
+        height: 70%;
+        background-color: white;
+    }
+    
+    .cd-headline.clip b {
+        opacity: 0;
+    }
+    
+    .cd-headline b.is-visible {
+        opacity: 1;
+        font-weight: 900;
+    }
+    
+    .vertical-center {
+        width: 100%;
+    }
+    /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                            Section 2: Foto
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    #section2 {
+        padding: 100px 0;
+        z-index: -1;
+        /*position: absolute;*/
+        display: flex;
+        background: white;
+    }
+    
+    #imgCarlosTello {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        transition: all 0.4s ease-in;
+    }
+    
+    #imgCarlosTello:hover {
+        transform: rotate(-5deg) perspective(700px);
+        transform-origin: center center;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------
+                                                        Section 2: About Me 
+    ------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .content {
+        text-align: justify;
+    }
+    
+    #h4Section2 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 36px;
+        letter-spacing: normal;
+        font-weight: 600;
+        color: #333333;
+        border-bottom-style: solid;
+        border-width: 2px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        line-height: 43px;
+        width: auto;
+    }
+    
+    .psection2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        color: #a3a3a3;
+    }
+    
+    @media (max-width: 1200px) {
+        .content {
+            margin-top: 30px;
+        }
+    }
+    /*-------------------------------------Social Icons --------------------------------*/
+    
+    .social-icon {
+        margin-top: 40px;
+    }
+    
+    .fab {
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        /* Permite separar los iconos */
+        margin-right: 10px;
+    }
+    /* zoom effect on Icons*/
+    
+    .fab:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+    }
+    /* background color to every Icon */
+    
+    .fa-facebook-f {
+        background: #3B5998;
+        color: white;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    
+    .fa-github {
+        background: black;
+        color: white;
+    }
+
+    .fa-codepen{
+        color: black;
+        background: whitesmoke;
+    }
+    /*------------------------------------------------------------------------ Boton Contact Me---------------------------------------------------------*/
+    
+    .botonHireMe {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-top: 50px;
+    }
+    
+    .boton {
+        font-family: Arial;
+        text-decoration: none;
+        text-transform: uppercase;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: .3s;
+    }
+    
+    .boton:before {
+        content: attr(back);
+        font-family: 'Font Awesome 5 Free';
+        content: '\f3cd';
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 40px;
+        color: #C49B66;
+        background: white;
+        border: 1px solid #C49B66;
+        transition: .3s;
+        transform-origin: right;
+        transform: translateY(-50%) rotateX(90deg);
+        height: 40px;
+        line-height: 12px;
+        width: 150px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 900;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .boton:after {
+        content: attr(front);
+        color: white;
+        background: #C49B66;
+        transition: .3s;
+        transform-origin: left;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        text-align: center;
+        line-height: 38px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .boton:hover:before {
+        transform: translateY(0) rotateX(0deg);
+    }
+    
+    .boton:hover:after {
+        transform: translateY(50%) rotateX(90deg);
+    }
+    /*------------------------------------------------------------------------ Boton Download---------------------------------------------------------*/
+    
+    .botonDownloadCV {
+        margin-left: 170px;
+        margin-top: 50px;
+    }
+    
+    .boton2 {
+        font-family: Arial;
+        text-decoration: none;
+        text-transform: uppercase;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: .3s;
+    }
+    
+    .boton2:before {
+        content: attr(back);
+        font-family: "Font Awesome 5 Free";
+        content: "\f381";
+        color: white;
+        background: #C49B66;
+        border: 1px solid #C49B66;
+        transition: .3s;
+        transform-origin: right;
+        transform: translateY(-50%) rotateX(90deg);
+        height: 40px;
+        width: 150px;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 38px;
+        font-weight: 900;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .boton2:after {
+        content: attr(front);
+        color: #C49B66;
+        background: white;
+        transition: .3s;
+        transform-origin: left;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        text-align: center;
+        line-height: 38px;
+        border: 1px solid #C49B66;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .boton2:hover:before {
+        transform: translateY(0) rotateX(0deg);
+    }
+    
+    .boton2:hover:after {
+        transform: translateY(50%) rotateX(90deg);
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            SECTION 3: Skills and Resume
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    .section3 {
+        background: blue;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/Imagenes/laptop.jpg");
+        height: auto;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding-bottom: 20px;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                            SECTION 3: Columns
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    
+    #colSection3 {
+        height: auto;
+    }
+    
+    #colSection32 {
+        height: auto;
+    }
+    
+    #colSection333 {
+        height: auto;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .colum1 {
+        border-color: white;
+        border-style: solid;
+        border-width: 0.5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .colum2 {
+        border-color: white;
+        border-style: solid;
+        border-width: 0.5px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .colum3 {
+        border-color: white;
+        border-style: solid;
+        border-width: 0.5px;
+        margin-right: 100px;
+        padding-right: 85px;
+        padding-bottom: 30px;
+    }
+    
+    .colum__p {
+        font-size: 14px;
+        color: #999999;
+        letter-spacing: normal;
+        line-height: 24px;
+        font-weight: bold;
+    }
+    
+    ul {
+        /*le quita los puntos a la lista*/
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .title-left {
+        font-size: 25px;
+        font-weight: bolder;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    /*---------- Columns icons -----------*/
+    
+    .fa-pencil-alt {
+        font-size: 30px;
+        color: #c49b66;
+        line-height: 30px;
+        font-weight: 600;
+        margin-top:10px;
+    }
+    
+    .fa-briefcase {
+        margin-top:10px;
+        color: #c49b66;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .fa-layer-group {
+        margin-top:10px;
+        color: #c49b66;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    /*--------------------------------------*/
+    
+    #containerSection3 {
+        padding-top: 30px;
+    }
+    
+    .h6Columna3 {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+    }
+    /*---------- Progress bars -----------*/
+    
+    .myProgress {
+        width: 100%;
+        background-color: #ddd;
+        margin-bottom: 15px;
+    }
+    
+    .myBar {
+        width: 10%;
+        height: 4px;
+        background: #c49b66;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        transition-duration: 1.5s;
+        transition-timing-function: ease;
+    }
+    
+  
+    @media only screen and (max-width: 992px) {
+        #colSection3 {
+            margin-top: 20px;
+        }
+        #colSection32 {
+            margin-top: 20px;
+        }
+        #colSection333 {
+            margin-top: 20px;
+        }
+    }
+    
+    .pH6Colum {
+        font-size: 5px;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------
+                                                        Section 4: Contact Me
+------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .section4 {
+      
+        height: 500px;
+        background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/Imagenes/fondo.jpg");
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-attachment: fixed;
+        
+    }
+    
+    #containerSection4 {
+        border-color: whitesmoke;
+        border-style: solid;
+        border-width: 0.5px;
+        padding-top: 20px;
+    }
+    
+    #rowSection4 {
+        text-align: center;
+        width: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    
+    .h4Section4 {
+        font-size: 36px;
+        display: inline-block;
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+        letter-spacing: normal;
+        line-height: 43px;
+        font-weight: 600;
+        border-bottom-style: solid;
+        border-width: 2px;
+        color:whitesmoke
+    }
+    /*---------------------------------------------------------- Formulario ------------------------------------------------------ */
+    
+    #form_name {
+        width: 100%;
+        background: whitesmoke;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 4px 4px 4px 4px;
+        border: 0px solid #000000;
+        box-shadow: 6px 7px 5px -2px rgba(0, 0, 0, 0.5);
+    }
+    
+    #form_email {
+        width: 100%;
+        background: whitesmoke;
+        border: 1px solid rgba(173, 33, 33, 0.904);
+        border-radius: 4px 4px 4px 4px;
+        border: 0px solid #000000;
+        box-shadow: 6px 7px 5px -2px rgba(0, 0, 0, 0.5);
+    }
+    
+    #form_subject {
+        width: 100%;
+        background: whitesmoke;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 4px 4px 4px 4px;
+        border: 0px solid #000000;
+        box-shadow: 6px 7px 5px -2px rgba(0, 0, 0, 0.5);
+    }
+    
+    #form_message {
+        width: 100%;
+        background: whitesmoke;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 4px 4px 4px 4px;
+        border: 0px solid #000000;
+        box-shadow: 6px 7px 5px -2px rgba(0, 0, 0, 0.5);
+    }
+
+    #loaders {
+        text-align: center;
+    }
+    #loaders img {
+        width: 150px;
+        margin: 0 auto;
+        /* display: none; */
+    }
+
+    #spinner {
+        display: none;
+    }
+    /*---------------------------------------------------------- Boton Formulario ------------------------------------------------------ */
+    
+    #formRowBoton {
+        height: 60px;
+        /*background: #55ACEE;*/
+    }
+    
+    #botonFormulario {
+        margin-left: 15px;
+    }
+    
+    .boton3 {
+        font-family: Arial;
+        text-decoration: none;
+        text-transform: uppercase;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: .3s;
+    }
+    
+    .boton3:before {
+        content: attr(back);
+        font-family: "Font Awesome 5 Free";
+        content: "\f1d8";
+        color: #C49B66;
+        background: white;
+        border: 1px solid #C49B66;
+        transition: .3s;
+        transform-origin: right;
+        transform: translateY(-50%) rotateX(90deg);
+        height: 40px;
+        width: 150px;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 38px;
+        font-weight: 900;
+    }
+    
+    .boton3:after {
+        content: attr(front);
+        color: white;
+        background: #C49B66;
+        transition: .3s;
+        transform-origin: left;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        text-align: center;
+        line-height: 38px;
+        border: 1px solid #C49B66;
+    }
+    
+    .boton3:hover:before {
+        transform: translateY(0) rotateX(0deg);
+    }
+    
+    .boton3:hover:after {
+        transform: translateY(50%) rotateX(90deg);
+    }
+    /*------------------------------------------------------------ Fila de Info Contacto ------------------------------------------------------------*/
+    
+    #rowInfo {
+        margin-top: 50px;
+    }
+    
+    .fa-mobile-alt {
+        font-size: 25px;
+    }
+    
+    .fa-envelope-open {
+        font-size: 25px;
+    }
+    
+    .fa-map-marker-alt {
+        font-size: 25px;
+    }
+    
+    .icon-mobile {
+        float: left;
+        padding-top: 10px;
+        color: black;
+    }
+    
+    .icon-envelope {
+        float: left;
+        padding-top: 10px;
+        color: black;
+    }
+    
+    .icon-map-pin {
+        float: left;
+        padding-top: 10px;
+        color: black;
+    }
+    
+    .cont {
+        text-align: left;
+        margin-left: 35px;
+        padding-left: 15px;
+        border-left: 1px solid rgba(0, 0, 0, 0.4);
+        font-size: 15px;
+    }
+    
+    .contH6 {
+        font-family: "Josefin Sans", sans-serif;
+        line-height: 17px;
+        letter-spacing: normal;
+        font-weight: 600;
+    }
+    
+    .contP {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        letter-spacing: normal;
+        line-height: 24px;
+    }
+
+
+ /*------------------------------------------------------------------------------------------------------------------------------------------
+                                                        Section 4: PORTFOLIO
+------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.portfolioSection{
+    background: white;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Header
+ ----------------------------------------------------------------------------------------------------------------------------------------*/
+
+ header{
+     padding: 40px 0;
+ }
+
+ header .logo{
+     text-align: center;
+     margin-bottom: 40px;
+ }
+
+ header .logo p{
+     color: #9b9b9b;
+ }
+
+ header .categorias{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ header .categorias a{
+     color:#9b9b9b;
+     margin: 10px 20px;
+     font-size: 18px;
+     font-weight: 700;
+ }
+
+ header .categorias a.activo{
+     color: black;
+ }
+
+ /* ----------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Grid
+ ----------------------------------------------------------------------------------------------------------------------------------------*/
+ @media (min-width: 576px) { 
+    #id{
+        
+        justify-content:center; 
+        align-items: center;
+        text-align: center;
+    }
+ }
+ .grid{
+     position:relative;
+     width: 100%;
+     opacity: 0;
+     transition: opacity 0.5s linear 1s;
+ }
+
+ .grid.imagenes-cargadas{
+     opacity:1;
+ }
+
+ .grid .item{
+     position: absolute;
+     display: block;
+     padding:0;
+     margin:10px;
+     /* width:calc(33.33% - 20px); Nota: los 20px son la suma de los margenes de izq. y der. de las imagenes y asi se resta ese margen
+     */
+    }
+
+ .grid .item-contenido{
+     position: relative;
+     
+ }
+
+ .grid .item img{
+     width:100%;
+     cursor: pointer;
+     vertical-align: top;
+     
+
+     /* ---- Bordes redondedos Tarjetas--- */
+     /* border-radius: 14px 14px 14px 14px;
+     -moz-border-radius: 14px 14px 14px 14px;
+     -webkit-border-radius: 14px 14px 14px 14px;
+     border: 0px solid #000000; */
+
+     /*---- Sombra Tarjetas---*/
+    /* -webkit-box-shadow: 9px 10px 9px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 9px -6px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 9px -6px rgba(119, 118, 118, 0.75); */
+ }
+
+
+ .card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .card-body{
+      background:#fffbf6;
+  }
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------
+                                                                    overlay
+ ----------------------------------------------------------------------------------------------------------------------------------------*/
+
+ .content{
+     position: absolute;
+     top:45%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     color:#c49b66;
+     white-space: nowrap;
+     overflow: hidden;
+ }
+
+ .content .span{
+     font-size: 30px;
+     display: block;
+     color:black;
+     opacity: 1;
+ }
+
+ .overlay{
+     position: absolute;
+     bottom: 0;
+     left:0;
+     right: 0;
+     background-color:whitesmoke;
+     width: 100%;
+     height:0;
+     transition: .5s ease;
+     overflow: hidden;
+
+     /*---- Borde Redondeados overlay---*/
+     border-radius: 14px 14px 14px 14px;
+     -moz-border-radius: 14px 14px 14px 14px;
+     -webkit-border-radius: 14px 14px 14px 14px;
+     border: 0px solid #000000;
+
+     opacity: 0.9;
+ }
+
+ .item:hover .overlay{
+     height: 100%;
+ }
+
+
+
+ @media only screen and (max-width: 575.98px) { 
+    .overlay .content span{
+        font-size: 10px;
+     }
+  }
+
+ 
+ @media (min-width: 767.98px) { 
+    .overlay .content span{
+        font-size: 15px;
+     }
+  }
+ 
+ 
+ @media (min-width: 991.98px) { 
+    .overlay .content span{
+        font-size: 20px;
+     }
+ }
+ 
+ 
+ @media (min-width: 1199.98px) { 
+    .overlay .content span{
+        font-size: 23px;
+     }
+  }
+
+  /*-----------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Media Querys Icono
+  -----------------------------------------------------------------------------------------------------------------------------------------*/
+  .infoSection{
+      background: white;
+  }
+  @media only screen and (max-width: 575.98px) { 
+    
+
+     .enlace{
+        color:black;
+        font-size: 15px;
+    }
+  }
+
+ 
+ @media (min-width: 767.98px) { 
+  
+
+     .enlace{
+        color:black;
+        font-size: 25px;
+    }
+  }
+ 
+ 
+ @media (min-width: 991.98px) { 
+   
+
+     .enlace{
+        color:black;
+        font-size: 35px;
+    }
+ }
+ 
+ 
+ @media (min-width: 1199.98px) { 
+    
+
+     .enlace{
+        color:black;
+        font-size: 33px;
+    }
+  }
+
+
+
+
+
+  .icono{
+      text-align: center;
+      cursor: pointer;
+  
+  }
+
+ 
+
+  .far .fa-eye{
+      display: inline-block;
+  }
+
+
+
+
+
+
+
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------
+                                                        Section 5: Footer
+------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .footer {
+        padding: 50px 0;
+        background: #111;
+        text-align: center;
+    }
+    
+    .footerP {
+        font-size: 15px;
+        color: white;
+        line-height: 1.6;
+        word-spacing: 1px;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    #year {
+        font-size: 15px;
+        color: white;
+        line-height: 1.6;
+        word-spacing: 1px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+
+
+    
